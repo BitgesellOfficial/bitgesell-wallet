@@ -3,7 +3,7 @@
 
 			<footer class="footer">
 				<div class="container-fluid">
-					<span class="text-muted">Bitgesell Wallet @ 2020-2021</span>
+					<span class="text-muted" id="copyright-text"></span>
 				</div>
 			</footer>
 
@@ -18,6 +18,11 @@
 		</div>
 
 		<script src="jsbgl.min.js"></script>
+		<script>
+			window.onload = function (params) {
+				const $copyrightSpan = $('#copyright-text').text("Bitgesell Wallet @"  + "2020-" + new Date().getFullYear())
+			}
+		</script>
 		<script src="coingecko-coin-price-chart-widget.js"></script>
 		<script src="app.min.js?22"></script>
 	</body>
